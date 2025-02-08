@@ -1,0 +1,147 @@
+.heroContainer {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Full-screen dark overlay for better contrast */
+.heroContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+.heroTitleContainer {
+  padding-top: 1rem;
+  z-index: 9997;
+  width: 100%;
+  position: relative;
+}
+
+/* Make hero text pop */
+.heroTitleContainer h2 {
+  margin: 0;
+  font-size: 2em;
+  line-height: normal;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  max-width: 1280px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2; /* Keeps text above overlay */
+}
+
+/* Dark background for the phone container */
+.telephoneContainer {
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 43%;
+  z-index: 9997;
+  font-size: 1.5em;
+}
+
+.telephoneContainer a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.heroSubTextContainer {
+  top: 25%;
+  z-index: 9997;
+  font-size: 2.5em;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Hero image with brightness reduction */
+.heroImage {
+  object-fit: cover;
+  height: 41.25rem;
+  width: 100%;
+  display: block;
+  filter: brightness(50%); /* Reduce brightness */
+}
+
+/* Improved gradient overlay */
+.gradient {
+  width: 100%;
+  position: relative;
+}
+.gradient:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6) 0%,
+    /* Darker at the bottom */ rgba(0, 0, 0, 0.4) 50%,
+    /* Mid fade */ rgba(0, 0, 0, 0) 100% /* Transparent at the top */
+  );
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 37.5rem) and (max-width: 64rem) and (orientation: portrait) {
+  .formContainer {
+    width: 50%;
+  }
+  .content {
+    padding: 2rem 0;
+  }
+}
+
+/* Laptop/Desktop Styles */
+@media (min-width: 64.0625rem) and (max-width: 80rem) {
+  .heroContainer {
+    padding-top: 4rem;
+  }
+  .heroImage {
+    height: 41.25rem;
+  }
+  .content {
+    padding: 2rem 0;
+  }
+  .heroTitleContainer {
+    padding-top: 0;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 80.0625rem) {
+  .heroContainer {
+    padding-top: 4rem;
+  }
+  .heroImage {
+    height: 41.25rem;
+  }
+  .content {
+    padding: 2rem 0;
+  }
+  .heroTitleContainer {
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,25 @@
+import { render } from 'preact';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/700.css';
+import '@fontsource/montserrat/400.css';
+import '@fontsource/montserrat/400-italic.css';
+import '@fontsource/montserrat/500.css';
+import '@fontsource/montserrat/500-italic.css';
+import '@fontsource/montserrat/600.css';
+import '@fontsource/montserrat/600-italic.css';
+import '@fontsource/montserrat/700.css';
+import '@fontsource/montserrat/700-italic.css';
+import '@fontsource/bebas-neue/400.css';
+import '@fontsource/lora';
+import '@fontsource/lora/400.css';
+import '@fontsource/lora/400-italic.css';
+import '@fontsource/lora/500.css';
+import '@fontsource/lora/500-italic.css';
+import '@fontsource/lora/600.css';
+import '@fontsource/lora/600-italic.css';
+import '@fontsource/lora/700.css';
+import '@fontsource/lora/700-italic.css';
+import './assets/styles/index.css';
+import { App } from './components/app.jsx';
+
+render(<App />, document.getElementById('app'));

@@ -1,0 +1,110 @@
+.aboutContainer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .aboutContainer {
+  background-color: #f9f9f9;
+  border-radius: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+} */
+
+.content {
+  font-size: 1.3em;
+  line-height: 1.6;
+  margin: 1rem 0;
+  font-weight: 400;
+  color: #444;
+  text-align: center;
+}
+/* .content {
+  font-size: 1.2em;
+  margin: 1rem 0;
+  font-weight: 400;
+  color: #333;
+} */
+
+.icon {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.subContentContainer {
+  margin: 2rem 0;
+  border-radius: 1em;
+  padding: 1.5rem;
+  background-color: #0077b6;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.subContent {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600; /* Make the text bold */
+  font-size: 1.2em;
+  margin: 0.5rem 0;
+  color: #e3f2fd; /* Lighter shade for slight differentiation */
+}
+
+.subContentContainer p {
+  text-align: center; /* Center align the details */
+}
+
+.subContentContainer div {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Subtle divider */
+}
+
+.subContentContainer div:last-child {
+  border-bottom: none; /* Remove divider on the last item */
+}
+
+/* Styles for tablets in portrait */
+@media only screen and (min-width: 37.5rem) and (max-width: 64rem) and (orientation: portrait) {
+  .aboutContainer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .content {
+    width: 33%;
+  }
+  .subContentContainer {
+    width: 33%;
+  }
+}
+
+/* LAPTOP DESKTOP */
+
+@media (min-width: 64.0625rem) and (max-width: 80rem) {
+  .aboutContainer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .content {
+    width: 33%;
+  }
+  .subContentContainer {
+    width: 33%;
+  }
+}
+
+/* LARGE SCREENS */
+
+@media (min-width: 80.0625rem) {
+  .aboutContainer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .content {
+    width: 33%;
+  }
+  .subContentContainer {
+    width: 33%;
+  }
+}

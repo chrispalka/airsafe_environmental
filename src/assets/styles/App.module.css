@@ -1,0 +1,45 @@
+/* Base section styles */
+.section {
+  width: 100%; /* Use 100% instead of 100vw */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically if needed */
+  box-sizing: border-box; /* Includes padding in dimensions */
+  position: relative; /* Ensures proper stacking context if needed */
+  padding: 50px 0; /* Add vertical padding */
+}
+
+/* Alternating background colors */
+.section1 {
+  background-color: #f0f0f0; /* Light gray */
+}
+
+.section2 {
+  background-color: #333; /* Dark gray */
+  color: white; /* Light text for contrast */
+}
+
+.section3 {
+  background-color: #e0e0e0; /* Another light gray */
+}
+
+.sectionfooter {
+  background-color: #2374ab;
+  color: #fff;
+}
+
+/* Content container */
+.content {
+  max-width: 1280px; /* Constrain content width */
+  width: 100%; /* Ensure content spans full width within constraints */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add horizontal padding for small screens */
+  text-align: center; /* Optional for centering text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content {
+    padding: 0 10px; /* Increase padding on smaller screens */
+  }
+}

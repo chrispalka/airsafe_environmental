@@ -1,0 +1,13 @@
+.servicesContainer {
+  width: 100%;
+  padding: 1rem;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap onto new lines */
+  gap: 50px; /* Space between cards */
+  justify-content: center; /* Center the cards within the container */
+  padding: 20px; /* Padding around the section */
+  box-sizing: border-box; /* Include padding and border in width/height */
+}
