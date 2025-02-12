@@ -2,7 +2,7 @@
   padding-top: 3.25rem;
   padding-bottom: 3.25rem;
   /* margin-top: 3.125rem; */
-  background-color: #e0e0e0;
+  background-color: var(--background-color);
   opacity: 100;
   display: flex;
   justify-content: center;
@@ -32,6 +32,7 @@
 
 .formSubContainer h1 {
   margin: 1rem;
+  color: #ffffff;
 }
 
 .subHeading {

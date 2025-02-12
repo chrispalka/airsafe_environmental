@@ -11,20 +11,19 @@
 
 /* Alternating background colors */
 .section1 {
-  background-color: #f0f0f0; /* Light gray */
+  background-color: #ffffff; /* Light gray */
 }
 
 .section2 {
-  background-color: #333; /* Dark gray */
-  color: white; /* Light text for contrast */
+  background-color: var(--secondary-color); /* Dark gray */
 }
 
 .section3 {
-  background-color: #e0e0e0; /* Another light gray */
+  background-color: #ffffff; /* Another light gray */
 }
 
 .sectionfooter {
-  background-color: #2374ab;
+  background-color: var(--secondary-color);
   color: #fff;
 }
 
@@ -42,4 +41,8 @@
   .content {
     padding: 0 10px; /* Increase padding on smaller screens */
   }
+}
+
+.noTopPadding {
+  padding-top: 0;
 }

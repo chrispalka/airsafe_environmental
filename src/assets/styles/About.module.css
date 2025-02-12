@@ -1,34 +1,38 @@
 .aboutContainer {
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
-/* .aboutContainer {
-  background-color: #f9f9f9;
-  border-radius: 1em;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 2rem;
-  max-width: 600px;
-  margin: 2rem auto;
-} */
+.infoGraphicContainer {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 1rem;
+  box-sizing: border-box;
+}
+
+.infographicImg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
 
 .content {
+  display: flex;
+  flex-direction: column;
   font-size: 1.3em;
   line-height: 1.6;
   margin: 1rem 0;
   font-weight: 400;
   color: #444;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-/* .content {
-  font-size: 1.2em;
-  margin: 1rem 0;
-  font-weight: 400;
-  color: #333;
-} */
 
 .icon {
   color: #fff;
@@ -65,11 +69,35 @@
   border-bottom: none; /* Remove divider on the last item */
 }
 
+.leftJustified {
+  margin: 1rem 0;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  max-width: 800px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 /* Styles for tablets in portrait */
 @media only screen and (min-width: 37.5rem) and (max-width: 64rem) and (orientation: portrait) {
   .aboutContainer {
     flex-direction: row;
     justify-content: space-evenly;
+  }
+  .leftJustified {
+    text-align: left;
   }
   .content {
     width: 33%;
@@ -89,6 +117,9 @@
   .content {
     width: 33%;
   }
+  .leftJustified {
+    text-align: left;
+  }
   .subContentContainer {
     width: 33%;
   }
@@ -103,6 +134,9 @@
   }
   .content {
     width: 33%;
+  }
+  .leftJustified {
+    text-align: left;
   }
   .subContentContainer {
     width: 33%;

@@ -1,6 +1,9 @@
 .servicesContainer {
   width: 100%;
-  padding: 1rem;
+}
+
+.servicesContainer h1 {
+  color: #ffffff;
 }
 
 .grid {

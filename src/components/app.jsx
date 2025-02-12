@@ -17,7 +17,12 @@ export function App() {
     <>
       <Nav scrollDirection={scrollDirection} top={topOfPage} />
       <Hero />
-      <div id='about' className={[styles.section, styles.section1].join(' ')}>
+      <div
+        id='about'
+        className={[styles.section, styles.section1, styles.noTopPadding].join(
+          ' '
+        )}
+      >
         <div className={styles.content}>
           <About />
         </div>
@@ -26,13 +31,19 @@ export function App() {
         id='services'
         className={[styles.section, styles.section2].join(' ')}
       >
-        <Services />
+        <div className={styles.content}>
+          <Services />
+        </div>
       </div>
       <div id='contact' className={[styles.section, styles.section3].join(' ')}>
-        <Contact />
+        <div className={styles.content}>
+          <Contact />
+        </div>
       </div>
       <div className={[styles.section, styles.sectionfooter].join(' ')}>
-        <Footer />
+        <div className={styles.content}>
+          <Footer />
+        </div>
       </div>
     </>
   );

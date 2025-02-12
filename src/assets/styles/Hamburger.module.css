@@ -11,7 +11,7 @@
   width: 2rem;
   height: 0.2rem;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: #222;
   transform-origin: 1px;
   transition: all 0.3s linear;
 }

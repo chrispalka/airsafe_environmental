@@ -30,11 +30,11 @@ function Hero() {
             sizes='(max-width: 600px) 100vw,
              (max-width: 1200px) 50vw,
              33vw'
-            alt='Nurse helping an elderly person'
+            alt='House, periodic table, Radon, Rn, Blueprint, Schematic'
           />
         </div>
       </div>
-      <div className={styles.telephoneContainer}>
+      {/* <div className={styles.telephoneContainer}>
         <div>
           <h2>Hablamos español</h2>
         </div>
@@ -44,7 +44,7 @@ function Hero() {
             <a href='tel:+1 (404) 772-5167'>+1 (404) 772-5167</a>
           </h2>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'preact/hooks';
 import { Hamburger, useScrollLock } from '../layout/index';
-import logo from '../assets/logo.webp';
+import logo from '../assets/air_safe_logo.png';
 
 import styles from '../assets/styles/Nav.module.css';
 
@@ -63,9 +63,19 @@ function Nav({ scrollDirection, top }) {
 
   return (
     <>
-      <div className={styles.hamburgerContainer} onClick={toggleShowNav}>
-        <Hamburger isOpen={navActive} onClick={toggleShowNav} />
-      </div>
+      {isMobile && (
+        <div className={styles.topBar}>
+          <div>
+            <h1>AirSafe</h1>
+          </div>
+          <div>
+            <h1>Environmental</h1>
+          </div>
+          <div className={styles.hamburgerContainer} onClick={toggleShowNav}>
+            <Hamburger isOpen={navActive} onClick={toggleShowNav} />
+          </div>
+        </div>
+      )}
       <div
         className={
           navActive
@@ -78,25 +88,24 @@ function Nav({ scrollDirection, top }) {
         }
       >
         <div className={styles.navItemsContainer}>
-          <img
-            src={logo}
-            alt='yardhouse solutions logo non medical transport van'
-            className={styles.logo}
-          />
+          {!isMobile && (
+            <img
+              src={logo}
+              alt='yardhouse solutions logo non medical transport van'
+              className={styles.logo}
+            />
+          )}
           <div className={styles.linkContainer}>
             {items.map((item, index) => (
-              <>
-                <div className={styles.linkWrapper}>
-                  <a
-                    href={item.href}
-                    onClick={toggleShowNav}
-                    key={index}
-                    className={styles.links}
-                  >
-                    {item.name}
-                  </a>
-                </div>
-              </>
+              <div className={styles.linkWrapper} key={index}>
+                <a
+                  href={item.href}
+                  onClick={toggleShowNav}
+                  className={styles.links}
+                >
+                  {item.name}
+                </a>
+              </div>
             ))}
           </div>
         </div>
