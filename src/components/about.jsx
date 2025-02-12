@@ -20,18 +20,15 @@ import styles from '../assets/styles/About.module.css';
 function About() {
   return (
     <div className={styles.aboutContainer}>
+      <h1>WHAT IS RADON?</h1>
       <div className={styles.card}>
         <div className={styles.content}>
           <div className={styles.infoGraphicContainer}>
-            <h2>WHAT IS RADON?</h2>
             <p className={styles.leftJustified}>
               Radon is a naturally occurring radioactive gas that forms from the
               breakdown of uranium in soil, rock, and water. It is colorless,
               odorless, and tasteless, making it impossible to detect without
-              proper testing. When radon seeps into homes and buildings through
-              foundation cracks and gaps, it can accumulate to dangerous levels,
-              increasing the risk of lung cancer. Radon mitigation systems help
-              reduce these levels, creating a safer indoor environment.
+              proper testing.
             </p>
             <img
               src={RadonImg}
@@ -49,20 +46,31 @@ function About() {
           </div>
         </div>
       </div>
-      <div className={styles.infoGraphicContainer}>
-        <img
-          src={CigaretteImg}
-          className={styles.infographicImg}
-          srcSet={`
-            ${CigaretteImg320} 320w,
-            ${CigaretteImg768} 768w,
-              ${CigaretteImg1280} 1280w
-          `}
-          sizes='(max-width: 600px) 100vw,
-                 (max-width: 1200px) 50vw,
-                 33vw'
-          alt='Cigarettes, Radon, Infographic'
-        />
+      <h1>Insert Title Here</h1>
+      <div className={styles.card}>
+        <div className={styles.content}>
+          <div className={styles.infoGraphicContainer}>
+            <p className={styles.leftJustified}>
+              When radon seeps into homes and buildings through foundation
+              cracks and gaps, it can accumulate to dangerous levels, increasing
+              the risk of lung cancer. Radon mitigation systems help reduce
+              these levels, creating a safer indoor environment.
+            </p>
+            <img
+              src={CigaretteImg}
+              className={styles.infographicImg}
+              srcSet={`
+                ${CigaretteImg320} 320w,
+                ${CigaretteImg768} 768w,
+                ${CigaretteImg1280} 1280w
+              `}
+              sizes='(max-width: 600px) 100vw,
+                     (max-width: 1200px) 50vw,
+                     33vw'
+              alt='Cigarettes, Radon, Infographic'
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

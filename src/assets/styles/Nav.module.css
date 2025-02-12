@@ -15,9 +15,14 @@
 .logo {
   object-fit: contain;
   width: 100%;
-  max-width: 50%;
-  height: 40px;
+  max-width: 100%;
+  height: auto;
+  max-height: 100px; /* Adjust the height as needed */
   display: block;
+}
+
+.logoActive {
+  z-index: 9999;
 }
 
 .navItemsContainer {
@@ -72,7 +77,6 @@
 
 .topBar {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
@@ -87,6 +91,13 @@
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .links {
+    font-size: 1.5em; /* Increase the font size for mobile */
+  }
+}
+
+/* Styles for tablets in portrait */
 @media only screen and (min-width: 37.5rem) and (max-width: 64rem) and (orientation: portrait) {
 }
 

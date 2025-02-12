@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'preact/hooks';
 import { Hamburger, useScrollLock } from '../layout/index';
 import logo from '../assets/air_safe_logo.png';
+import logoWhite from '../assets/air_safe_logo_white.png';
 
 import styles from '../assets/styles/Nav.module.css';
 
@@ -65,12 +66,11 @@ function Nav({ scrollDirection, top }) {
     <>
       {isMobile && (
         <div className={styles.topBar}>
-          <div>
-            <h1>AirSafe</h1>
-          </div>
-          <div>
-            <h1>Environmental</h1>
-          </div>
+          <img
+            src={navActive ? logoWhite : logo}
+            alt='AirSafe Environmental logo'
+            className={`${styles.logo} ${navActive ? styles.logoActive : ''}`}
+          />
           <div className={styles.hamburgerContainer} onClick={toggleShowNav}>
             <Hamburger isOpen={navActive} onClick={toggleShowNav} />
           </div>
@@ -90,8 +90,8 @@ function Nav({ scrollDirection, top }) {
         <div className={styles.navItemsContainer}>
           {!isMobile && (
             <img
-              src={logo}
-              alt='yardhouse solutions logo non medical transport van'
+              src={navActive ? logoWhite : logo}
+              alt='AirSafe Environmental logo'
               className={styles.logo}
             />
           )}
@@ -113,4 +113,5 @@ function Nav({ scrollDirection, top }) {
     </>
   );
 }
+
 export default Nav;
