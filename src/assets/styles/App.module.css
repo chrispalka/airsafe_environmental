@@ -11,19 +11,19 @@
 
 /* Alternating background colors */
 .section1 {
-  background-color: #ffffff; /* Light gray */
+  background-color: #eee;
 }
 
 .section2 {
-  background-color: var(--secondary-color); /* Dark gray */
+  background-color: var(--primary-color);
 }
 
 .section3 {
-  background-color: #ffffff; /* Another light gray */
+  background-color: #abb6c4;
 }
 
 .sectionfooter {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: #fff;
 }
 

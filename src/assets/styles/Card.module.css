@@ -14,28 +14,30 @@
 }
 
 .card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .cardImage {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 .cardContent {
   padding: 16px;
 }
 
-.cardTitle {
+/* .cardTitle {
   font-size: 1.5rem;
   margin: 0;
   color: #333;
-}
+} */
 
 .cardText {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #555;
   margin-top: 8px;
 }

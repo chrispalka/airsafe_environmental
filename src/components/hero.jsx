@@ -1,7 +1,7 @@
-import HeroImgLg from '../assets/heroimg.webp';
-import HeroImg320 from '../assets/heroimg-320.webp';
-import HeroImg768 from '../assets/heroimg-768.webp';
-import HeroImg1280 from '../assets/heroimg-1280.webp';
+import HeroImgLg from '../assets/close-up-men-looking-plan.webp';
+import HeroImg320 from '../assets/close-up-men-looking-plan-320.webp';
+import HeroImg768 from '../assets/close-up-men-looking-plan-768.webp';
+import HeroImg1280 from '../assets/close-up-men-looking-plan-1280.webp';
 import styles from '../assets/styles/Hero.module.css';
 
 function Hero() {
@@ -15,7 +15,7 @@ function Hero() {
             </div>
           </div>
           <div className={styles.heroSubTextContainer}>
-            <span>Fast, Efficient, Cost Effective!</span>
+            <span>Clean Air, Safe Home</span>
           </div>
         </div>
         <div className={styles.gradient}>
@@ -30,7 +30,7 @@ function Hero() {
             sizes='(max-width: 600px) 100vw,
              (max-width: 1200px) 50vw,
              33vw'
-            alt='House, periodic table, Radon, Rn, Blueprint, Schematic'
+            alt='male contactors looking at plans, blueprints, schematics, house plans'
           />
         </div>
       </div>

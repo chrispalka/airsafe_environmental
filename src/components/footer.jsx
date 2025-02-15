@@ -32,9 +32,9 @@ function Footer() {
             <li>
               <a href='#about'>About Us</a>
             </li>
-            <li>
+            {/* <li>
               <a href='#services'>Services</a>
-            </li>
+            </li> */}
             <li>
               <a href='#contact'>Contact Us</a>
             </li>
@@ -89,7 +89,7 @@ function Footer() {
       {/* Footer Bottom */}
       <div className={styles.footerBottom}>
         <p>© 2025 AirSafe Environmental. All Rights Reserved.</p>
-        <p>"Your Health, Our Priority on the Road."</p>
+        <p className={styles.slogan}>"Clean Air, Safe Home."</p>
       </div>
     </div>
   );

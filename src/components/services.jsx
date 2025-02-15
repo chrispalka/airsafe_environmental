@@ -1,16 +1,16 @@
 import styles from '../assets/styles/Services.module.css';
 import { Card } from '../layout/index';
-import WheelchairImg from '../assets/wheelchair_transport.webp';
-import SpecialNeedsImg from '../assets/special_needs_service.webp';
-import StretcherImg from '../assets/stretcher_service.webp';
-import SeniorImg from '../assets/senior_service.webp';
+// import WheelchairImg from '../assets/wheelchair_transport.webp';
+// import SpecialNeedsImg from '../assets/special_needs_service.webp';
+// import StretcherImg from '../assets/stretcher_service.webp';
+// import SeniorImg from '../assets/senior_service.webp';
 
 function Services() {
   return (
     <div className={styles.servicesContainer}>
       <h1>SERVICES</h1>
       <div className={styles.grid}>
-        <Card
+        {/* <Card
           title='Wheelchair'
           content='Safe and reliable transportation for wheelchair-bound passengers, ensuring comfort and ease of access.'
           image={WheelchairImg}
@@ -29,7 +29,7 @@ function Services() {
           title='Special Needs'
           content='Personalized transportation solutions for individuals with disabilities or special needs.'
           image={SpecialNeedsImg}
-        />
+        /> */}
       </div>
     </div>
   );

@@ -27,14 +27,14 @@ export function App() {
           <About />
         </div>
       </div>
-      <div
+      {/* <div
         id='services'
         className={[styles.section, styles.section2].join(' ')}
       >
         <div className={styles.content}>
           <Services />
         </div>
-      </div>
+      </div> */}
       <div id='contact' className={[styles.section, styles.section3].join(' ')}>
         <div className={styles.content}>
           <Contact />
