@@ -9,12 +9,12 @@ function Footer() {
           <h3>Contact Us</h3>
           <p>
             Phone:
-            <a href='tel:+1 (404) 772-5167'> +1 (404) 772-5167</a>
+            <a href='tel:+1 (678) 245-0698'> +1 (678) 245-0698</a>
           </p>
           <p>
             Email:{' '}
-            <a href='mailto:info@yardhouse-transportation.com'>
-              info@yardhouse-transportation.com
+            <a href='mailto:customer.support@safe-environmental'>
+              customer.support@safe-environmental.com
             </a>
           </p>
           <p>Operating Hours: </p>

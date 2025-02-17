@@ -26,7 +26,7 @@
 }
 
 .navItemsContainer {
-  line-height: normal;
+  line-height: 100%;
   width: 100%;
   z-index: 9997;
   display: flex;
@@ -35,6 +35,7 @@
   justify-content: center;
   transition: all ease 0.4s;
 }
+
 .navActive {
   transition: all ease 0.4s;
   left: 0;
@@ -59,20 +60,31 @@
 
 .linkContainer {
   width: 100%;
-  padding: 1rem;
 }
 
 .linkWrapper {
-  padding: 1rem 0;
   width: 100%;
+  cursor: pointer; /* Add cursor pointer for better UX */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  transition: background-color 0.3s ease; /* Add transition for background color */
 }
 
 .linkWrapper:hover {
-  background-color: rgb(181, 179, 179);
+  background-color: #7e8ea2; /* Change to a more appealing color that fits your color scheme */
 }
 
 .links {
+  display: block; /* Make the link a block element to fill the parent container */
+  width: 100%; /* Ensure the link takes up the full width of the parent container */
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #ffffff;
   font-weight: 700;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.links:hover {
+  color: #fff;
 }
 
 .topBar {

@@ -19,13 +19,18 @@
   max-width: 300px;
 }
 
-.footerSection a {
+.footerSection a,
+.footerLinks a,
+.socialIcons a {
   color: white;
-  /* text-decoration: none; */
+  text-decoration: none; /* Ensure text decoration is none */
 }
 
-.footerSection a:hover {
-  color: #333;
+.footerSection a:hover,
+.footerLinks a:hover,
+.socialIcons a:hover {
+  color: #aaa; /* Change to a lighter color */
+  text-decoration: none; /* Ensure text decoration is none on hover */
 }
 
 .footerSection h3 {
@@ -40,25 +45,6 @@
 
 .footerLinks li {
   margin-bottom: 5px;
-}
-
-.footerLinks a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footerLinks a:hover {
-  text-decoration: underline;
-}
-
-.socialIcons a {
-  margin-right: 15px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.socialIcons a:hover {
-  color: #aaa;
 }
 
 .footerBottom {
