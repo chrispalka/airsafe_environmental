@@ -6,6 +6,37 @@
   padding: 20px;
 }
 
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--headers);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.paragraphText {
+  text-align: left;
+  font-size: 1.3rem;
+  color: #555;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
 .infoGraphicContainer {
   width: 100%;
   max-width: 100%;
@@ -98,6 +129,42 @@
   box-sizing: border-box; /* Include padding and border in width/height */
 }
 
+.content {
+  max-width: 1280px; /* Constrain content width */
+  width: 100%; /* Ensure content spans full width within constraints */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add horizontal padding for small screens */
+  text-align: center; /* Optional for centering text */
+}
+.section {
+  width: 100%; /* Use 100% instead of 100vw */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically if needed */
+  box-sizing: border-box; /* Includes padding in dimensions */
+  position: relative; /* Ensures proper stacking context if needed */
+  padding: 50px 0; /* Add vertical padding */
+}
+
+/* Alternating background colors */
+.section1a {
+  background-color: #eee;
+}
+
+.section1b {
+  background-color: #fff;
+}
+.noTopPadding {
+  padding-top: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content {
+    padding: 0 10px; /* Increase padding on smaller screens */
+  }
+}
+
 /* Styles for tablets in portrait */
 @media only screen and (min-width: 37.5rem) and (max-width: 64rem) and (orientation: portrait) {
   .aboutContainer {
@@ -106,9 +173,6 @@
   }
   .leftJustified {
     text-align: left;
-  }
-  .content {
-    width: 33%;
   }
   .subContentContainer {
     width: 33%;
@@ -122,9 +186,11 @@
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .content {
-    width: 33%;
+  .flexContainer {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
+
   .leftJustified {
     text-align: left;
   }
@@ -140,9 +206,11 @@
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .content {
-    width: 33%;
+  .flexContainer {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
+
   .leftJustified {
     text-align: left;
   }

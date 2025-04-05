@@ -10,8 +10,12 @@
 }
 
 /* Alternating background colors */
-.section1 {
+.section1a {
   background-color: #eee;
+}
+
+.section1b {
+  background-color: #fff;
 }
 
 .section2 {

@@ -7,15 +7,17 @@ const Card = ({ title, content, alt, image, srcSet }) => {
       <div className={styles.cardContent}>
         <h1 className={styles.cardTitle}>{title}</h1>
         <p className={styles.cardText}>{content}</p>
-        <img
-          src={image}
-          srcSet={srcSet}
-          alt={alt}
-          className={styles.cardImage}
-          sizes='(max-width: 600px) 100vw,
-        (max-width: 1200px) 50vw,
-        33vw'
-        />
+        {image && (
+          <img
+            src={image}
+            srcSet={srcSet}
+            alt={alt}
+            className={styles.cardImage}
+            sizes='(max-width: 600px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw'
+          />
+        )}
       </div>
     </div>
   );
