@@ -2,6 +2,7 @@ import {
   Nav,
   Hero,
   About,
+  Help,
   Services,
   Contact,
   Footer,
@@ -20,15 +21,23 @@ export function App() {
       <div id='about'>
         <About />
       </div>
+      <div id='help' className={[styles.section, styles.section2].join(' ')}>
+        <div className={styles.content}>
+          <Help />
+        </div>
+      </div>
       <div
         id='services'
-        className={[styles.section, styles.section2].join(' ')}
+        className={[styles.section, styles.section1a].join(' ')}
       >
         <div className={styles.content}>
           <Services />
         </div>
       </div>
-      <div id='contact' className={[styles.section, styles.section3].join(' ')}>
+      <div
+        id='contact'
+        className={[styles.section, styles.section1b].join(' ')}
+      >
         <div className={styles.content}>
           <Contact />
         </div>

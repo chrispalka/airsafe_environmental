@@ -53,6 +53,14 @@ function Nav({ scrollDirection, top }) {
       href: '#about',
     },
     {
+      name: 'How we can help',
+      href: '#help',
+    },
+    {
+      name: 'Services',
+      href: '#services',
+    },
+    {
       name: 'Contact',
       href: '#contact',
     },

@@ -20,7 +20,6 @@ import styles from '../assets/styles/About.module.css';
 function About() {
   return (
     <>
-      {/* Section 1: What is Radon */}
       <div
         className={[styles.section, styles.section1a, styles.noTopPadding].join(
           ' '
@@ -57,8 +56,6 @@ function About() {
           </div>
         </div>
       </div>
-
-      {/* Section 2: How Am I Affected */}
       <div
         className={[styles.section, styles.section1b, styles.noTopPadding].join(
           ' '

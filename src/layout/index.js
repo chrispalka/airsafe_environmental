@@ -4,9 +4,11 @@ import Hamburger from '../components/hamburger';
 import Card from '../components/card';
 import Hero from '../components/hero';
 import About from '../components/about';
+import Help from '../components/help';
 import Services from '../components/services';
 import Contact from '../components/contact';
 import Form from '../components/form';
+import Icon from '../components/icon';
 import Footer from '../components/footer';
 import useScrollLock from '../hooks/useScrollLock';
 import useScroll from '../hooks/useScroll';
@@ -18,9 +20,11 @@ export {
   Card,
   Hero,
   About,
+  Help,
   Services,
   Contact,
   Form,
+  Icon,
   Footer,
   useScrollLock,
   useScroll,

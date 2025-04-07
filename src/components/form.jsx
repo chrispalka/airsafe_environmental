@@ -61,9 +61,11 @@ function Form({ isPageLoading }) {
             <>
               <h1 className={styles.heading}>Get in touch!</h1>
               <p className={styles.subHeading}>
-                Fill out the form below, and we will get back to you as soon as
-                possible!
+                Fill out the form below, or give us a call
               </p>
+              <div className={styles.phoneContainer}>
+                <a href='tel:+1 (678) 245-0698'> +1 (678) 245-0698</a>
+              </div>
               <form
                 onSubmit={handleSubmit(onSubmit)}
                 className={styles.styledForm}
