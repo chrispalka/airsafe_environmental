@@ -28,7 +28,7 @@ function About() {
         <div className={styles.content}>
           <div className={styles.aboutContainer}>
             <div className={styles.flexContainer}>
-              <div>
+              <di className={styles.textContainer}>
                 <h1 className={styles.title}>WHAT IS RADON?</h1>
                 <p className={styles.paragraphText}>
                   Our mission is to provide you with the most accurate and
@@ -36,7 +36,7 @@ function About() {
                   We are committed to helping you understand the dangers of
                   radon exposure and how to mitigate those risks.
                 </p>
-              </div>
+              </di>
               <div>
                 <img
                   src={RadonImg}
@@ -64,7 +64,7 @@ function About() {
         <div className={styles.content}>
           <div className={styles.aboutContainer}>
             <div className={styles.flexContainer}>
-              <div>
+              <div className={styles.textContainer}>
                 <h1 className={styles.title}>HOW AM I AFFECTED?</h1>
                 <p className={styles.paragraphText}>
                   Radon is a naturally occurring radioactive gas that forms from

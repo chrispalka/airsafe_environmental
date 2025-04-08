@@ -9,7 +9,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 100%; /* Ensure the card does not exceed its container */
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
   background-color: #fff;
   overflow: hidden;
@@ -27,6 +27,7 @@
   box-sizing: border-box;
   height: 100%;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   padding: 16px;
 }
@@ -73,10 +74,11 @@
 }
 
 .cardImage {
-  max-width: 100%;
-  height: auto;
+  width: 100%; /* Make the image fill the width of its container */
+  height: 250px; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensure the image covers the container while maintaining its aspect ratio */
+  border-radius: 8px; /* Keep the rounded corners */
   margin: 20px 0;
-  border-radius: 8px;
 }
 
 @media only screen and (min-width: 37.5rem) and (max-width: 64rem) and (orientation: portrait) {

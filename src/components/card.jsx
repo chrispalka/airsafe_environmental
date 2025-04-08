@@ -16,9 +16,11 @@ const Card = ({
   return (
     <div className={styles.card}>
       <div className={styles.cardContent}>
-        <div className={styles.iconContainer}>
-          <Icon icon={icon} size='xl' color={iconColor} />
-        </div>
+        {icon && (
+          <div className={styles.iconContainer}>
+            <Icon icon={icon} size='xl' color={iconColor} />
+          </div>
+        )}
         <h1 className={styles.cardTitle}>{title}</h1>
         <p className={styles.cardText}>{content}</p>
         {image && (

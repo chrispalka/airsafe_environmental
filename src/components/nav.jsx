@@ -49,19 +49,19 @@ function Nav({ scrollDirection, top }) {
       href: '#home',
     },
     {
-      name: 'About',
+      name: 'What Is Radon',
       href: '#about',
     },
     {
-      name: 'How we can help',
+      name: 'How We Help',
       href: '#help',
     },
     {
-      name: 'Services',
+      name: 'What We Do',
       href: '#services',
     },
     {
-      name: 'Contact',
+      name: 'Contact Us',
       href: '#contact',
     },
   ];

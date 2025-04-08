@@ -197,6 +197,9 @@
   .subContentContainer {
     width: 33%;
   }
+  .textContainer {
+    width: 400px;
+  }
 }
 
 /* LARGE SCREENS */
@@ -216,5 +219,8 @@
   }
   .subContentContainer {
     width: 33%;
+  }
+  .textContainer {
+    width: 400px;
   }
 }
