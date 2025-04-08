@@ -14,10 +14,10 @@ import RadonMitigationImg768 from '../assets/radon-mitigation-768.webp';
 import RadonMitigationImg1280 from '../assets/radon-mitigation-1280.webp';
 
 // Radon Monitor Testing Images
-import RadonTestingImg from '../assets/radon-monitor-testing.webp';
-import RadonTestingImg320 from '../assets/radon-monitor-testing-320.webp';
-import RadonTestingImg768 from '../assets/radon-monitor-testing-768.webp';
-import RadonTestingImg1280 from '../assets/radon-monitor-testing-1280.webp';
+import RadonTestingImg from '../assets/radon-monitor-testing_.webp';
+import RadonTestingImg320 from '../assets/radon-monitor-testing320.webp';
+import RadonTestingImg768 from '../assets/radon-monitor-testing768.webp';
+import RadonTestingImg1280 from '../assets/radon-monitor-testing1280.webp';
 
 // Water Mitigation and Restoration Images
 import WaterMitigationImg from '../assets/water-mitigation-and-restoration.webp';
