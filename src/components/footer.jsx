@@ -30,11 +30,14 @@ function Footer() {
               <a href='#home'>Home</a>
             </li>
             <li>
-              <a href='#about'>About Us</a>
+              <a href='#about'>What Is Radon</a>
             </li>
-            {/* <li>
-              <a href='#services'>Services</a>
-            </li> */}
+            <li>
+              <a href='#help'>How We Help</a>
+            </li>
+            <li>
+              <a href='#services'>What We Do</a>
+            </li>
             <li>
               <a href='#contact'>Contact Us</a>
             </li>
