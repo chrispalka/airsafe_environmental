@@ -4,6 +4,7 @@ import Hamburger from '../components/hamburger';
 import Card from '../components/card';
 import Hero from '../components/hero';
 import About from '../components/about';
+import InstagramEmbed from '../components/instragramEmbed';
 import Help from '../components/help';
 import Services from '../components/services';
 import Contact from '../components/contact';
@@ -20,6 +21,7 @@ export {
   Card,
   Hero,
   About,
+  InstagramEmbed,
   Help,
   Services,
   Contact,
