@@ -9,6 +9,7 @@ import Help from '../components/help';
 import Services from '../components/services';
 import Contact from '../components/contact';
 import Form from '../components/form';
+import SectionSeparator from '../components/sectionSeparator';
 import Icon from '../components/icon';
 import Footer from '../components/footer';
 import useScrollLock from '../hooks/useScrollLock';
@@ -26,6 +27,7 @@ export {
   Services,
   Contact,
   Form,
+  SectionSeparator,
   Icon,
   Footer,
   useScrollLock,

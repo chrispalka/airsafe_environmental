@@ -8,10 +8,10 @@ import BoardAndTarpImg768 from '../assets/board-up-and-tarping-768.webp';
 import BoardAndTarpImg1280 from '../assets/board-up-and-tarping-1280.webp';
 
 // Radon Mitigation Images
-import RadonMitigationImg from '../assets/radon-mitigation.webp';
-import RadonMitigationImg320 from '../assets/radon-mitigation-320.webp';
-import RadonMitigationImg768 from '../assets/radon-mitigation-768.webp';
-import RadonMitigationImg1280 from '../assets/radon-mitigation-1280.webp';
+import RadonMitigationImg from '../assets/radon_mitigation_exterior.webp';
+import RadonMitigationImg320 from '../assets/radon_mitigation_exterior-320.webp';
+import RadonMitigationImg768 from '../assets/radon_mitigation_exterior-768.webp';
+import RadonMitigationImg1280 from '../assets/radon_mitigation_exterior-1280.webp';
 
 // Radon Monitor Testing Images
 import RadonTestingImg from '../assets/radon-monitor-testing_.webp';

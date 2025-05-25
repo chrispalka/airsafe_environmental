@@ -12,11 +12,7 @@ import styles from '../assets/styles/About.module.css';
 function About() {
   return (
     <>
-      <div
-        className={[styles.section, styles.section1a, styles.noTopPadding].join(
-          ' '
-        )}
-      >
+      <div className={[styles.section, styles.noTopPadding].join(' ')}>
         <div className={styles.content}>
           <h1 className={styles.title}>WHAT IS RADON?</h1>
           <div className={styles.aboutContainer}>

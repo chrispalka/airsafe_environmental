@@ -85,6 +85,9 @@
   .card {
     width: 60%; /* Adjust width for larger screens */
   }
+  .cardImage {
+    height: 500px; /* Increase height for larger screens */
+  }
 }
 
 /* LAPTOP DESKTOP */
@@ -93,6 +96,9 @@
   .card {
     width: 33%; /* Adjust width for larger screens */
   }
+  .cardImage {
+    height: 500px; /* Increase height for larger screens */
+  }
 }
 
 /* LARGE SCREENS */
@@ -100,5 +106,8 @@
 @media (min-width: 80.0625rem) {
   .card {
     width: 33.33%; /* Adjust width for larger screens */
+  }
+  .cardImage {
+    height: 500px; /* Increase height for larger screens */
   }
 }

@@ -1,6 +1,6 @@
 /* Base section styles */
 .section {
-  width: 100%; /* Use 100% instead of 100vw */
+  width: 100vw; /* Use 100% instead of 100vw */
   display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically if needed */
@@ -31,12 +31,19 @@
   color: #fff;
 }
 
+.svgSeparator {
+  width: 100vw;
+  position: relative;
+}
+
 /* Content container */
 .content {
-  max-width: 1280px; /* Constrain content width */
-  width: 100%; /* Ensure content spans full width within constraints */
-  margin: 0 auto; /* Center the container */
-  padding: 0 20px; /* Add horizontal padding for small screens */
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1440px; /* More space for cards */
+  margin: 0 auto;
+  box-sizing: border-box;
   text-align: center; /* Optional for centering text */
 }
 
