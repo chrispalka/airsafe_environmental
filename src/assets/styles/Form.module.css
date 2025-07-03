@@ -19,6 +19,17 @@
   padding: 1rem;
   /* width: 100%; */
 }
+
+.submitError {
+  color: red;
+  background-color: #ffe6e6;
+  border: 1px solid red;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
 .phoneContainer {
   margin-bottom: 2rem;
 }

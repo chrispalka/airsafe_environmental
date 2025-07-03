@@ -12,6 +12,7 @@ const api = import.meta.env.VITE_API_URL;
 function Form({ isPageLoading }) {
   const [isLoading, setIsLoading] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
   const {
     control,
     register,
@@ -23,12 +24,15 @@ function Form({ isPageLoading }) {
 
   const onSubmit = (data) => {
     setIsLoading(true);
+    setErrorMessage('');
     axios
-      .post(`${api}/formSubmit`, {
-        data,
-      })
+      .post(
+        `${api}/formSubmit`,
+        { data },
+        { headers: { 'Content-Type': 'application/json' } }
+      )
       .then((response) => {
-        if (response.data === 'success') {
+        if (response.data?.status === 'success') {
           setIsLoading(false);
           setIsComplete(true);
           reset({
@@ -41,9 +45,15 @@ function Form({ isPageLoading }) {
           setTimeout(() => {
             setIsComplete(false);
           }, 3000);
+        } else {
+          throw new Error('Unexpected response format');
         }
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        console.error('Form submission failed:', err);
+        setErrorMessage('Something went wrong. Please try again later.');
+        setIsLoading(false);
+      });
   };
 
   return (
@@ -60,6 +70,9 @@ function Form({ isPageLoading }) {
           {!isComplete ? (
             <>
               <h1 className={styles.heading}>Get in touch!</h1>
+              {errorMessage && (
+                <p className={styles.submitError}>{errorMessage}</p>
+              )}
               <p className={styles.subHeading}>
                 Fill out the form below, or give us a call
               </p>
